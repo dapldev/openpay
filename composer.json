@@ -1,7 +1,7 @@
 {
     "name": "openpay-dapl/laravel",
-	 "description": "This is a client implementing the payment services for Openpay",
-     "type": "library",
+	"description": "This is a client implementing the payment services for Openpay",
+    "type": "library",
 	"version": "1.0.0",
 	"minimum-stability": "stable",
     "require": {
@@ -22,6 +22,9 @@
             "name": "Ritayan Pal",
             "email": "rityan@digitalaptech.com"
         }
-    ]
+    ],
+	"require-dev": {
+        "phpunit/phpunit": "4.8.*"
+    }
    
 }
