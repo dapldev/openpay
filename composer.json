@@ -1,5 +1,5 @@
 {
-    "name": "openpay-dapl/App\/Http\/Controllers\/lib\/Openpay\/Common\/Openpay",
+    "name": "openpay-dapl/Openpay",
 	"description": "This is a client implementing the payment services for Openpay",
     "type": "library",
 	"version": "1.0.0",
@@ -11,7 +11,7 @@
     },
     "license": "Apache-2.0",
 	 "autoload": {
-        "psr-0": { "Openpay": "/lib/Openpay/Common" }
+        "psr-0": { "Openpay": "/App/Http/Controllers/lib/Openpay/Common" }
     },
     "authors": [
         {
