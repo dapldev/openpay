@@ -1,5 +1,5 @@
 <?php 
-namespace App\Http\Controllers\lib\OpenPay\Common;
+namespace App\Http\Controllers\lib\Openpay\Common;
 /**
  * Class Openpay
  *

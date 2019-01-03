@@ -1,5 +1,5 @@
 <?php
-namespace App\Http\Controllers\lib\OpenPay\Api;
+namespace App\Http\Controllers\lib\Openpay\Api;
 /**
  * Class PlanPurchasePriceReductionCall
  *

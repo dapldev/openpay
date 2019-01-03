@@ -1,5 +1,5 @@
 <?php
-namespace App\Http\Controllers\lib\OpenPay\Validation;
+namespace App\Http\Controllers\lib\Openpay\Validation;
 /**
  * Class Validation
  *

@@ -1,5 +1,5 @@
 <?php
-namespace App\Http\Controllers\lib\OpenPay\Core;
+namespace App\Http\Controllers\lib\Openpay\Core;
 /**
  * Class ApiConnection
  *

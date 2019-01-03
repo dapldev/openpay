@@ -163,3 +163,30 @@ Log: {"status":"0","reason":{},"PlanID":"3000000022290"}
 Order status log time: 202.191.214.153 - January 3, 2019, 9:01 am
 Log: {"status":"0","reason":{},"PlanID":"3000000022290","OrderStatus":"Approved","PlanStatus":"Active","PurchasePrice":"1250.0000"}
 -------------------------
+Order refund log time: 202.191.214.153 - January 3, 2019, 9:20 am
+Log: {"status":"12711","reason":"Invalid Web Sales Plan Status For Partial Refund","PlanID":"3000000022278"}
+-------------------------
+Order refund log time: 202.191.214.153 - January 3, 2019, 9:20 am
+Log: {"status":"12711","reason":"Invalid Web Sales Plan Status For Partial Refund","PlanID":"3000000022281"}
+-------------------------
+Order refund log time: 202.191.214.153 - January 3, 2019, 9:32 am
+Log: {"status":"12711","reason":"Invalid Web Sales Plan Status For Partial Refund","PlanID":"3000000022280"}
+-------------------------
+Order refund log time: 202.191.214.153 - January 3, 2019, 9:46 am
+Log: {"status":"12711","reason":"Invalid Web Sales Plan Status For Partial Refund","PlanID":"3000000022281"}
+-------------------------
+Order status log time: 202.191.214.153 - January 3, 2019, 9:57 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022290","OrderStatus":"Approved","PlanStatus":"Active","PurchasePrice":"1250.0000"}
+-------------------------
+Order refund log time: 202.191.214.153 - January 3, 2019, 9:57 am
+Log: {"status":"12711","reason":"Invalid Web Sales Plan Status For Partial Refund","PlanID":"3000000022281"}
+-------------------------
+Order dispatch log time: 202.191.214.153 - January 3, 2019, 9:57 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022281"}
+-------------------------
+Call-time: 202.191.214.153 - January 3, 2019, 9:58 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022293","EncryptedPlanID":"fhlexjSQG29NTGcYmFArHXscpOemRzAKa63Dv6ggeUg="}
+-------------------------
+Call 3 log time: 202.191.214.153 - January 3, 2019, 9:58 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022293","PurchasePrice":"1750.0000"}
+-------------------------
