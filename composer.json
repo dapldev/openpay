@@ -1,6 +1,7 @@
 {
     "name": "openpay-dapl/laravel",
     "type": "ibrary",
+	"version": "1.0.0",
     "require": {
         "php": "5.6",
         "ext-curl": "^7.2",
