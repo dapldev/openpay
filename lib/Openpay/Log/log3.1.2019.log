@@ -1,0 +1,165 @@
+Order status log time: 202.191.214.153 - January 3, 2019, 7:28 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022198","OrderStatus":"Approved","PlanStatus":"Finished","PurchasePrice":"50.0000"}
+-------------------------
+Order refund log time: 202.191.214.153 - January 3, 2019, 7:29 am
+Log: {"status":"12711","reason":"Invalid Web Sales Plan Status For Partial Refund","PlanID":"3000000022198"}
+-------------------------
+Order refund log time: 202.191.214.153 - January 3, 2019, 7:29 am
+Log: {"status":"12711","reason":"Invalid Web Sales Plan Status For Partial Refund","PlanID":"3000000022198"}
+-------------------------
+Order refund log time: 202.191.214.153 - January 3, 2019, 7:31 am
+Log: {"status":"12711","reason":"Invalid Web Sales Plan Status For Partial Refund","PlanID":"3000000022198"}
+-------------------------
+Call-time: 202.191.214.153 - January 3, 2019, 7:34 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022278","EncryptedPlanID":"fhlexjSQG29NTGcYmFArHf3XG87aIHaNeQ6OKZcB+u8="}
+-------------------------
+Call 3 log time: 202.191.214.153 - January 3, 2019, 7:35 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022278","PurchasePrice":"1750.0000"}
+-------------------------
+Order refund log time: 202.191.214.153 - January 3, 2019, 7:37 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022278"}
+-------------------------
+Order refund log time: 202.191.214.153 - January 3, 2019, 7:37 am
+Log: {"status":"12709","reason":"New Purchase Price \/ Reduce Price By should be less than current Purchase Price","PlanID":"3000000022278"}
+-------------------------
+Order refund log time: 202.191.214.153 - January 3, 2019, 7:38 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022278"}
+-------------------------
+Order refund log time: 202.191.214.153 - January 3, 2019, 7:38 am
+Log: {"status":"12711","reason":"Invalid Web Sales Plan Status For Partial Refund","PlanID":"3000000022278"}
+-------------------------
+Order refund log time: 202.191.214.153 - January 3, 2019, 7:39 am
+Log: {"status":"12711","reason":"Invalid Web Sales Plan Status For Partial Refund","PlanID":"3000000022278"}
+-------------------------
+Call-time: 202.191.214.153 - January 3, 2019, 7:39 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022280","EncryptedPlanID":"fhlexjSQG29NTGcYmFArHd6QYLhng+DIZv\/Ycq97Sp4="}
+-------------------------
+Call 3 log time: 202.191.214.153 - January 3, 2019, 7:40 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022280","PurchasePrice":"1750.0000"}
+-------------------------
+Order refund log time: 202.191.214.153 - January 3, 2019, 7:40 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022280"}
+-------------------------
+Order refund log time: 202.191.214.153 - January 3, 2019, 7:40 am
+Log: {"status":"12711","reason":"Invalid Web Sales Plan Status For Partial Refund","PlanID":"3000000022280"}
+-------------------------
+Order refund log time: 202.191.214.153 - January 3, 2019, 7:40 am
+Log: {"status":"12711","reason":"Invalid Web Sales Plan Status For Partial Refund","PlanID":"3000000022280"}
+-------------------------
+Order status log time: 202.191.214.153 - January 3, 2019, 7:47 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022280","OrderStatus":"Approved","PlanStatus":"Finished","PurchasePrice":"50.0000"}
+-------------------------
+Order refund log time: 202.191.214.153 - January 3, 2019, 7:47 am
+Log: {"status":"12711","reason":"Invalid Web Sales Plan Status For Partial Refund","PlanID":"3000000022280"}
+-------------------------
+Order status log time: 202.191.214.153 - January 3, 2019, 7:48 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022280","OrderStatus":"Approved","PlanStatus":"Finished","PurchasePrice":"50.0000"}
+-------------------------
+Order refund log time: 202.191.214.153 - January 3, 2019, 7:48 am
+Log: {"status":"12711","reason":"Invalid Web Sales Plan Status For Partial Refund","PlanID":"3000000022280"}
+-------------------------
+Order refund log time: 202.191.214.153 - January 3, 2019, 7:49 am
+Log: {"status":"12711","reason":"Invalid Web Sales Plan Status For Partial Refund","PlanID":"3000000022280"}
+-------------------------
+Order status log time: 202.191.214.153 - January 3, 2019, 7:51 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022280","OrderStatus":"Approved","PlanStatus":"Finished","PurchasePrice":"50.0000"}
+-------------------------
+Order status log time: 202.191.214.153 - January 3, 2019, 7:53 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022280","OrderStatus":"Approved","PlanStatus":"Finished","PurchasePrice":"50.0000"}
+-------------------------
+Order refund log time: 202.191.214.153 - January 3, 2019, 7:53 am
+Log: {"status":"12711","reason":"Invalid Web Sales Plan Status For Partial Refund","PlanID":"3000000022280"}
+-------------------------
+Call-time: 202.191.214.153 - January 3, 2019, 7:56 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022281","EncryptedPlanID":"fhlexjSQG29NTGcYmFArHVu\/WA8m432Ztc0+Kc3orIQ="}
+-------------------------
+Call 3 log time: 202.191.214.153 - January 3, 2019, 7:57 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022281","PurchasePrice":"1750.0000"}
+-------------------------
+Order status log time: 202.191.214.153 - January 3, 2019, 7:58 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022281","OrderStatus":"Approved","PlanStatus":"Active","PurchasePrice":"1750.0000"}
+-------------------------
+Order refund log time: 202.191.214.153 - January 3, 2019, 7:59 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022281"}
+-------------------------
+Order status log time: 202.191.214.153 - January 3, 2019, 8:00 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022281","OrderStatus":"Approved","PlanStatus":"Finished","PurchasePrice":"5.0000"}
+-------------------------
+Call-time: 202.191.214.153 - January 3, 2019, 8:49 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022288","EncryptedPlanID":"fhlexjSQG29NTGcYmFArHaRKB6TKxdU1f5EyJRa\/bCo="}
+-------------------------
+Call 3 log time: 202.191.214.153 - January 3, 2019, 8:49 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022288","PurchasePrice":"1750.0000"}
+-------------------------
+Order refund log time: 202.191.214.153 - January 3, 2019, 8:49 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022288"}
+-------------------------
+Order refund log time: 202.191.214.153 - January 3, 2019, 8:50 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022288"}
+-------------------------
+Order refund log time: 202.191.214.153 - January 3, 2019, 8:50 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022288"}
+-------------------------
+Order refund log time: 202.191.214.153 - January 3, 2019, 8:50 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022288"}
+-------------------------
+Order refund log time: 202.191.214.153 - January 3, 2019, 8:50 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022288"}
+-------------------------
+Order refund log time: 202.191.214.153 - January 3, 2019, 8:51 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022288"}
+-------------------------
+Order refund log time: 202.191.214.153 - January 3, 2019, 8:51 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022288"}
+-------------------------
+Order refund log time: 202.191.214.153 - January 3, 2019, 8:51 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022288"}
+-------------------------
+Order refund log time: 202.191.214.153 - January 3, 2019, 8:51 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022288"}
+-------------------------
+Order refund log time: 202.191.214.153 - January 3, 2019, 8:52 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022288"}
+-------------------------
+Order refund log time: 202.191.214.153 - January 3, 2019, 8:52 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022288"}
+-------------------------
+Order refund log time: 202.191.214.153 - January 3, 2019, 8:52 am
+Log: {"status":"12711","reason":"Invalid Web Sales Plan Status For Partial Refund","PlanID":"3000000022288"}
+-------------------------
+Order refund log time: 202.191.214.153 - January 3, 2019, 8:52 am
+Log: {"status":"12711","reason":"Invalid Web Sales Plan Status For Partial Refund","PlanID":"3000000022288"}
+-------------------------
+Order refund log time: 202.191.214.153 - January 3, 2019, 8:53 am
+Log: {"status":"12711","reason":"Invalid Web Sales Plan Status For Partial Refund","PlanID":"3000000022288"}
+-------------------------
+Order refund log time: 202.191.214.153 - January 3, 2019, 8:53 am
+Log: {"status":"12711","reason":"Invalid Web Sales Plan Status For Partial Refund","PlanID":"3000000022288"}
+-------------------------
+Order dispatch log time: 202.191.214.153 - January 3, 2019, 8:55 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022288"}
+-------------------------
+Call-time: 202.191.214.153 - January 3, 2019, 8:55 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022289","EncryptedPlanID":"fhlexjSQG29NTGcYmFArHbExPmid7XvlWnKsRtX+VIg="}
+-------------------------
+Call 3 log time: 202.191.214.153 - January 3, 2019, 8:56 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022289","PurchasePrice":"1750.0000"}
+-------------------------
+Order dispatch log time: 202.191.214.153 - January 3, 2019, 8:57 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022289"}
+-------------------------
+Call-time: 202.191.214.153 - January 3, 2019, 8:59 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022290","EncryptedPlanID":"fhlexjSQG29NTGcYmFArHZmdoUM0nAsXgzPYJawMf6s="}
+-------------------------
+Call 3 log time: 202.191.214.153 - January 3, 2019, 8:59 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022290","PurchasePrice":"1750.0000"}
+-------------------------
+Order refund log time: 202.191.214.153 - January 3, 2019, 8:59 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022290"}
+-------------------------
+Order dispatch log time: 202.191.214.153 - January 3, 2019, 9:00 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022290"}
+-------------------------
+Order status log time: 202.191.214.153 - January 3, 2019, 9:01 am
+Log: {"status":"0","reason":{},"PlanID":"3000000022290","OrderStatus":"Approved","PlanStatus":"Active","PurchasePrice":"1250.0000"}
+-------------------------

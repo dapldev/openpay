@@ -1,0 +1,6 @@
+Call 1 log-time: 202.191.214.153 - November 29, 2018, 11:46 am
+Log: {"status":"0","reason":{},"PlanID":"3000000020743","EncryptedPlanID":"fhlexjSQG29NTGcYmFArHdJmNBPwoyxjzJ+9V6drUrk="}
+-------------------------
+Call3 log time: 202.191.214.153 - November 29, 2018, 11:46 am
+Log: {"status":"12704","reason":"Plan ID supplied does not exist","PlanID":{},"PurchasePrice":{}}
+-------------------------
