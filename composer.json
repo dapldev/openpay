@@ -1,5 +1,5 @@
 {
-    "name": "openpay-dapl/App\Http\Controllers\lib\Openpay\Common\Openpay",
+    "name": "openpay-dapl/App\/Http\/Controllers\/lib\/Openpay\/Common\/Openpay",
 	"description": "This is a client implementing the payment services for Openpay",
     "type": "library",
 	"version": "1.0.0",
