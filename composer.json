@@ -1,7 +1,9 @@
 {
     "name": "openpay-dapl/laravel",
-    "type": "ibrary",
+	 "description": "This is a client implementing the payment services for Openpay",
+     "type": "library",
 	"version": "1.0.0",
+	"minimum-stability": "stable",
     "require": {
         "php": "5.6",
         "ext-curl": "^7.2",
@@ -20,6 +22,6 @@
             "name": "Ritayan Pal",
             "email": "rityan@digitalaptech.com"
         }
-    ],
-    "minimum-stability": "stable"
+    ]
+   
 }
