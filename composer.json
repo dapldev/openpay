@@ -1,5 +1,5 @@
 {
-    "name": "openpay/laravel",
+    "name": "openpay-dapl/laravel",
     "type": "ibrary",
     "require": {
         "php": "5.6",
