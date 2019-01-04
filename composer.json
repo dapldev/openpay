@@ -11,7 +11,7 @@
     },
     "license": "Apache-2.0",
 	 "autoload": {
-        "psr-0": { "App/Http/Controllers/lib/Openpay/Common": "" }
+		 "files":["vendor/openpaydapl/openpay/lib/Openpay/Common/openpay.php"],
     },
     "authors": [
         {
