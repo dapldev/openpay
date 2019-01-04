@@ -1,5 +1,5 @@
 <?php
-namespace App\Http\Controllers\lib\Openpay\Api;
+namespace openpaydapl\openpay\lib\Openpay\Api;
 /**
  * Class OnlineOrderCapturePayment
  *
@@ -9,7 +9,7 @@ namespace App\Http\Controllers\lib\Openpay\Api;
  
 * NOTE: This API call will actually take the deposit payment for the Plan and make the purchase Active in the Openpay system. This call must occur within 15 minutes from when the consumer has finished the Plan selection process and the user flow has redirected back to the host system.
  */
-Class OnlineOrderCapturePayment extends \App\Http\Controllers\lib\OpenPay\Core\ApiConnection
+Class OnlineOrderCapturePayment extends \openpaydapl\openpay\lib\Openpay\Core\ApiConnection
 {      
     private function _prepareXmldocument(){
         $this->xml = new \SimpleXMLElement('<OnlineOrderCapturePayment/>'); 

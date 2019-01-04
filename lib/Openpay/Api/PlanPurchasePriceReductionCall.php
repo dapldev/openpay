@@ -1,5 +1,5 @@
 <?php
-namespace App\Http\Controllers\lib\Openpay\Api;
+namespace openpaydapl\openpay\lib\Openpay\Api;
 /**
  * Class PlanPurchasePriceReductionCall
  *
@@ -32,7 +32,7 @@ namespace App\Http\Controllers\lib\Openpay\Api;
 					
  
  */
-Class PlanPurchasePriceReductionCall extends \App\Http\Controllers\lib\OpenPay\Core\ApiConnection 
+Class PlanPurchasePriceReductionCall extends \openpaydapl\openpay\lib\Openpay\Core\ApiConnection 
 {
 	  private function _prepareXmldocument(){
         $this->xml = new \SimpleXMLElement('<OnlineOrderReduction/>'); 
@@ -50,10 +50,10 @@ Class PlanPurchasePriceReductionCall extends \App\Http\Controllers\lib\OpenPay\C
     {
       // Algo ;
       try {
-        \App\Http\Controllers\lib\OpenPay\Validation\Validation::_validatePrice($this->PurchasePrice);
+        \openpaydapl\openpay\lib\Openpay\Validation\Validation::_validatePrice($this->PurchasePrice);
         if($this->ReducePriceBy)
         {
-          \App\Http\Controllers\lib\OpenPay\Validation\Validation::_validatePrice($this->ReducePriceBy);
+          \openpaydapl\openpay\lib\Openpay\Validation\Validation::_validatePrice($this->ReducePriceBy);
         }
         //If the exception is thrown, this text will not be shown
         $this->_updateUrl();

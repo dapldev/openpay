@@ -1,5 +1,5 @@
 <?php
-namespace App\Http\Controllers\lib\Openpay\Api;
+namespace openpaydapl\openpay\lib\Openpay\Api;
 /**
  * Class MinMaxPurchasePrice
  *
@@ -8,7 +8,7 @@ namespace App\Http\Controllers\lib\Openpay\Api;
  * @package OpenPay\Api
 	This will return the range of your JamAuthToken
  */
-Class MinMaxPurchasePrice extends \App\Http\Controllers\lib\OpenPay\Core\ApiConnection 
+Class MinMaxPurchasePrice extends \openpaydapl\openpay\lib\Openpay\Core\ApiConnection 
 {
     private function _prepareXmldocument(){
         $this->xml = new \SimpleXMLElement('<MinMaxPurchasePrice/>'); 

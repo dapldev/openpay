@@ -1,5 +1,5 @@
 <?php
-namespace App\Http\Controllers\lib\Openpay\Api;
+namespace openpaydapl\openpay\lib\Openpay\Api;
 /**
  * Class OnlineOrderStatus
  *
@@ -34,7 +34,7 @@ namespace App\Http\Controllers\lib\Openpay\Api;
 									
  PurchasePrice      Decimal          Purchase price of the order
  */
-Class OnlineOrderStatus extends \App\Http\Controllers\lib\OpenPay\Core\ApiConnection
+Class OnlineOrderStatus extends \openpaydapl\openpay\lib\Openpay\Core\ApiConnection
 {      
     private function _prepareXmldocument(){
         $this->xml = new \SimpleXMLElement('<OnlineOrderStatus/>'); 

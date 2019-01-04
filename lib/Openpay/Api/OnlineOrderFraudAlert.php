@@ -1,4 +1,5 @@
 <?php
+namespace openpaydapl\openpay\lib\Openpay\Api;
 /* 
  * Class OnlineOrderFraudAlert
  *
@@ -31,7 +32,7 @@ parameters
  
  PlanID             BigInt (13)    The PlanID that was inspected
 */
-Class OnlineOrderFraudAlert extends ApiConnection 
+Class OnlineOrderFraudAlert extends \openpaydapl\openpay\lib\Openpay\core\ApiConnection 
 {
 	
     
