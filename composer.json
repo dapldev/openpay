@@ -11,7 +11,8 @@
     },
     "license": "Apache-2.0",
 	 "autoload": {
-		 "files":["lib/Openpay/Common/openpay.php"]
+		 
+		 "psr-4": { "openpay\\" : "lib/Openpay/Common/" }
     },
     "authors": [
         {
