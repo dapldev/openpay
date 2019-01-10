@@ -17,7 +17,7 @@ Laravel Framework:
 ------------------------------------------
 
 1. To install Openpay composer package run the below command
-  composer require <vendorname>/openpay dev-master
+  composer require openpaydapl/openpay dev-master
 
 2. Include the Openpay.php in the any controller page
    require(app_path('/../vendor/openpaydapl/openpay/lib/Openpay/Common/Openpay.php'));
