@@ -14,8 +14,9 @@ class OpenpayCharge
 	public static function _charge($pagegurl)
 	{
 		//echo $pagegurl;die;
-		return redirect($pagegurl)->send();die;
-		//echo '<script>window.location.href="'.$pagegurl.'"</script>';die;
+		return redirect($pagegurl)->send();
+		exit;
+	
 	}
 	
 	/*After the process is complete, the Jam system will redirect to the URL supplied along with a response value for the transaction.

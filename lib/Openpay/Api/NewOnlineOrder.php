@@ -31,11 +31,10 @@ class NewOnlineOrder extends \openpaydapl\openpay\lib\Openpay\Core\ApiConnection
 		$types = $this->xml->addChild('TenderTypes')->addChild('TenderType');
 		$types->addChild('Tender','Openpay');
 		$types->addChild('Amount',$this->PurchasePrice);
-		//print($this->xml->asXML());die();
-	    return $this->xml;
+		return $this->xml;
 	}
 
-	
+	//make the busket data request
 	public function BasketDataXmlBulder( $data, &$xml_data ) {
 		$mainNode = $xml_data->addChild('BasketData');
 		foreach( $data->BasketData['BasketItem'] as $key => $value ) {
@@ -55,7 +54,6 @@ class NewOnlineOrder extends \openpaydapl\openpay\lib\Openpay\Core\ApiConnection
 	public function _checkorder()
 	{
 	    try {
-		  	//openpaydapl\openpay\lib\Openpay\Validation\Validation::_validatePrice($this->PurchasePrice);
 		  	\openpaydapl\openpay\lib\Openpay\Validation\Validation::_minmaxPrice($this->PurchasePrice);
 		  	//If the exception is thrown, this text will not be shown
 		  	$this->_updateUrl();

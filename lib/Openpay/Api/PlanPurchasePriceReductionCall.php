@@ -33,7 +33,7 @@ namespace openpaydapl\openpay\lib\Openpay\Api;
  
  */
 Class PlanPurchasePriceReductionCall extends \openpaydapl\openpay\lib\Openpay\Core\ApiConnection 
-{
+{    //making the api body with parameters in xml format   
 	  private function _prepareXmldocument(){
         $this->xml = new \SimpleXMLElement('<OnlineOrderReduction/>'); 
         $this->xml->addChild('JamAuthToken', $this->jamtoken );

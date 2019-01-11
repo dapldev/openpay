@@ -10,11 +10,13 @@ namespace openpaydapl\openpay\lib\Openpay\Api;
  */
 Class MinMaxPurchasePrice extends \openpaydapl\openpay\lib\Openpay\Core\ApiConnection 
 {
-    private function _prepareXmldocument(){
+    //to prepare the xml request
+	private function _prepareXmldocument(){ 
         $this->xml = new \SimpleXMLElement('<MinMaxPurchasePrice/>'); 
         $this->xml->addChild('JamAuthToken', $this->jamtoken ); 
         return $this->xml;
     }
+	//get the output method
     public function _checkorder()
     {
         try {

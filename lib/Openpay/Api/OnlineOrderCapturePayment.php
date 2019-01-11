@@ -10,7 +10,7 @@ namespace openpaydapl\openpay\lib\Openpay\Api;
 * NOTE: This API call will actually take the deposit payment for the Plan and make the purchase Active in the Openpay system. This call must occur within 15 minutes from when the consumer has finished the Plan selection process and the user flow has redirected back to the host system.
  */
 Class OnlineOrderCapturePayment extends \openpaydapl\openpay\lib\Openpay\Core\ApiConnection
-{      
+{  //making the api body with parameters in xml format    
     private function _prepareXmldocument(){
         $this->xml = new \SimpleXMLElement('<OnlineOrderCapturePayment/>'); 
         $this->xml->addChild('JamAuthToken', $this->jamtoken );

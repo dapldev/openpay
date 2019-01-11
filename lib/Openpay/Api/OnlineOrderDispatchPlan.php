@@ -34,7 +34,7 @@ namespace openpaydapl\openpay\lib\Openpay\Api;
  PlanID             BigInt (13)    The PlanID that was inspected
  */
 Class OnlineOrderDispatchPlan extends \openpaydapl\openpay\lib\Openpay\Core\ApiConnection 
-{
+{     //making the api body with parameters in xml format
 	  private function _prepareXmldocument(){
         $this->xml = new \SimpleXMLElement('<OnlineOrderDispatchPlan/>'); 
         $this->xml->addChild('JamAuthToken', $this->jamtoken );

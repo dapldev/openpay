@@ -23,11 +23,7 @@ class Validation
 	//use price Format: NNNN.NN and should not to be negetive
 	public static function _validatePrice($PurchasePrice)
 	{
-		/* if(!is_float($PurchasePrice))
-	    {
-	        throw new \Exception("All Price should be in decimal format");
-	        return false;
-	    } */
+		
 	    if($PurchasePrice < 0)
 	    {
 	    	throw new \Exception("Purchase Price should be in positive");
