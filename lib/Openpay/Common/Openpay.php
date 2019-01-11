@@ -57,4 +57,3 @@ namespace openpaydapl\openpay\lib\Openpay\Common;
 
 		require(dirname(dirname(__FILE__)) . '/Api/OnlineOrderDispatchPlan.php');//Plan Dispatch Call 
 
-		//require(dirname(dirname(__FILE__)) . '/Api/OnlineOrderFraudAlert.php');//Customer Fraud Alert Call 
