@@ -1,4 +1,4 @@
-Openpay Sdk laravel 5.4 Documentation:
+Openpay Sdk laravel 5.4> Documentation:
 **************************
 
 
@@ -11,7 +11,7 @@ Openpay Sdk laravel 5.4 Documentation:
 
 
 This docmetation basically for composer php. if you want to use our sdk for composer based php like laravel go to in lib folder and take OpenPayLaravel folder. and delete the other one. There is an instruction for the use.
-
+here openpaydapl is vander name
 Laravel Framework:
 ------------------------------------------
 ------------------------------------------
@@ -19,8 +19,29 @@ Laravel Framework:
 1. To install Openpay composer package run the below command
   composer require openpaydapl/openpay dev-master
 
+   *After Installation give write permission to the log folder in the path "/vendor/openpaydapl/ 
+    openpay/lib/Openpay/log".
+
 2. Include the Openpay.php in the any controller page
    require(app_path('/../vendor/openpaydapl/openpay/lib/Openpay/Common/Openpay.php'));
+   
+   In the file the basic urls are define like this and use those constant.
+
+   define("URL","https://retailer.myopenpay.com.au/ServiceTraining/JAMServiceImpl.svc/");//Openpay 
+   Test Mode Or Live Mode URL place here
+   
+   define("CALLBACK_URL",url('/callback'));//Openpay Callback URL place here
+
+   define("CANCEL_URL",url('/cancel'));//Openpay Cancel URL place here
+
+   define("FAILURE_URL",url('/failure'));//Openpay Failure URL place here
+
+   define("FORM_URL","https://retailer.myopenpay.com.au/WebSalesTraining/"); //Openpay Form Submit 
+   URL place here
+
+   define("JAMTOKEN","30000000000000889|155f5b95-a40a-4ae5-8273-41ae83fec8c9");//Openpay Test Mode 
+   or Live Mode JAMTOKEN place here.(* When it is generate just change the JAMTOKEN) 
+
 3. then you have to set the basic parameters like this 
 
 $current_url='http://phpsdk.openpaytestandtrain.com.au';
