@@ -1,5 +1,5 @@
 <?php
-namespace openpay-sdk\openpaylaravel\lib\Openpay\Core;
+namespace openpayau\openpaylaravel\lib\Openpay\Core;
 /**
  * Class ApiConnection
  *

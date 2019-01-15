@@ -1,5 +1,5 @@
 <?php
-namespace openpay-sdk\openpaylaravel\lib\Openpay\Validation;
+namespace openpayau\openpaylaravel\lib\Openpay\Validation;
 /**
  * Class Validation
  *
@@ -60,7 +60,7 @@ class Validation
 	public static function _minmaxPrice($PurchasePrice)
 	{
 		$Method = "MinMaxPurchasePrice";
-		$obj = new \openpay-sdk\openpaylaravel\lib\Openpay\Api\MinMaxPurchasePrice(URL,$Method,'',JAMTOKEN, AUTHTOKEN);
+		$obj = new \openpayau\openpaylaravel\lib\Openpay\Api\MinMaxPurchasePrice(URL,$Method,'',JAMTOKEN, AUTHTOKEN);
 		$output = json_decode($obj->_checkorder(),true);
 
 		if($output['status']==0)
