@@ -11,16 +11,16 @@ Openpay Sdk laravel 5.4> Documentation:
 
 
 This docmetation basically for composer php. if you want to use our sdk for composer based php like laravel go to install Openpay composer package run the below command
-  composer require openpay-sdk/openpaylaravel dev-master. There is an instruction for the use.
-here openpay-sdk is vander name
+  composer require openpayau/openpaylaravel dev-master. There is an instruction for the use.
+here openpayau is vander name
 Laravel Framework:
 ------------------------------------------
 ------------------------------------------
 
 1. To install Openpay composer package run the below command
-  composer require openpay-sdk/openpaylaravel dev-master
+  composer require openpayau/openpaylaravel dev-master
 
-   *After Installation give write permission to the log folder in the path "/vendor/openpay-sdk/ 
+   *After Installation give write permission to the log folder in the path "/vendor/openpayau/ 
     openpay/lib/Openpay/log".
 
 2. Include the Openpay.php in the any controller page
