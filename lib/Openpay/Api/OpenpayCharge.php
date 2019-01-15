@@ -1,5 +1,5 @@
 <?php
-namespace openpay\openpaylaravel\lib\Openpay\Api;
+namespace openpay-sdk\openpaylaravel\lib\Openpay\Api;
 /**
  * Class OpenpayCharge
  *

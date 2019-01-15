@@ -1,5 +1,5 @@
 <?php
-namespace openpay\openpaylaravel\lib\Openpay\Api;
+namespace openpay-sdk\openpaylaravel\lib\Openpay\Api;
 /**
  * Class NewOnlineOrder
  *
@@ -16,7 +16,7 @@ namespace openpay\openpaylaravel\lib\Openpay\Api;
  PlanID             BigInt (13)    A 13 digit number representing the Plan ID that can be used in the subsequent order
  EncryptedPlanID    Chars          Future Use: Encrypted version of Plan ID, which should be used for secure Plan related communications.
  */
-class NewOnlineOrder extends \openpay\openpaylaravel\lib\Openpay\Core\ApiConnection
+class NewOnlineOrder extends \openpay-sdk\openpaylaravel\lib\Openpay\Core\ApiConnection
 {
 	//making the api body with parameters in xml format
 	private function _prepareXmldocument(){
@@ -54,7 +54,7 @@ class NewOnlineOrder extends \openpay\openpaylaravel\lib\Openpay\Core\ApiConnect
 	public function _checkorder()
 	{
 	    try {
-		  	\openpay\openpaylaravel\lib\Openpay\Validation\Validation::_minmaxPrice($this->PurchasePrice);
+		  	\openpay-sdk\openpaylaravel\lib\Openpay\Validation\Validation::_minmaxPrice($this->PurchasePrice);
 		  	//If the exception is thrown, this text will not be shown
 		  	$this->_updateUrl();
 		    $this->_prepareXmldocument();

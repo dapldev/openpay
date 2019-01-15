@@ -1,5 +1,5 @@
 <?php
-namespace openpay\openpaylaravel\lib\Openpay\Api;
+namespace openpay-sdk\openpaylaravel\lib\Openpay\Api;
 /**
  * Class OnlineOrderDispatchPlan
  *
@@ -33,7 +33,7 @@ namespace openpay\openpaylaravel\lib\Openpay\Api;
  
  PlanID             BigInt (13)    The PlanID that was inspected
  */
-Class OnlineOrderDispatchPlan extends \openpay\openpaylaravel\lib\Openpay\Core\ApiConnection 
+Class OnlineOrderDispatchPlan extends \openpay-sdk\openpaylaravel\lib\Openpay\Core\ApiConnection 
 {     //making the api body with parameters in xml format
 	  private function _prepareXmldocument(){
         $this->xml = new \SimpleXMLElement('<OnlineOrderDispatchPlan/>'); 

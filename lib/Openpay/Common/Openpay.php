@@ -1,6 +1,6 @@
 <?php 
 
-namespace openpay\openpaylaravel\lib\Openpay\Common;
+namespace openpay-sdk\openpaylaravel\lib\Openpay\Common;
 
 /**
 

@@ -1,5 +1,5 @@
 <?php
-namespace openpay\openpaylaravel\lib\Openpay\Api;
+namespace openpay-sdk\openpaylaravel\lib\Openpay\Api;
 /**
  * Class MinMaxPurchasePrice
  *
@@ -8,7 +8,7 @@ namespace openpay\openpaylaravel\lib\Openpay\Api;
  * @package OpenPay\Api
 	This will return the range of your JamAuthToken
  */
-Class MinMaxPurchasePrice extends \openpay\openpaylaravel\lib\Openpay\Core\ApiConnection 
+Class MinMaxPurchasePrice extends \openpay-sdk\openpaylaravel\lib\Openpay\Core\ApiConnection 
 {
     //to prepare the xml request
 	private function _prepareXmldocument(){ 
