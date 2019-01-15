@@ -53,7 +53,7 @@ Class PlanPurchasePriceReductionCall extends \openpayau\openpaylaravel\lib\Openp
         \openpayau\openpaylaravel\lib\Openpay\Validation\Validation::_validatePrice($this->PurchasePrice);
         if($this->ReducePriceBy)
         {
-          \openpayau\openpayau\lib\Openpay\Validation\Validation::_validatePrice($this->ReducePriceBy);
+          \openpayau\openpaylaravel\lib\Openpay\Validation\Validation::_validatePrice($this->ReducePriceBy);
         }
         //If the exception is thrown, this text will not be shown
         $this->_updateUrl();
