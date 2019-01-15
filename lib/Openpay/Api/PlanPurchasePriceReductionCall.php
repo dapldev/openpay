@@ -1,5 +1,5 @@
 <?php
-namespace openpaydapl\openpay\lib\Openpay\Api;
+namespace openpay\openpaylaravel\lib\Openpay\Api;
 /**
  * Class PlanPurchasePriceReductionCall
  *
@@ -32,7 +32,7 @@ namespace openpaydapl\openpay\lib\Openpay\Api;
 					
  
  */
-Class PlanPurchasePriceReductionCall extends \openpaydapl\openpay\lib\Openpay\Core\ApiConnection 
+Class PlanPurchasePriceReductionCall extends \openpay\openpaylaravel\lib\Openpay\Core\ApiConnection 
 {    //making the api body with parameters in xml format   
 	  private function _prepareXmldocument(){
         $this->xml = new \SimpleXMLElement('<OnlineOrderReduction/>'); 
@@ -50,10 +50,10 @@ Class PlanPurchasePriceReductionCall extends \openpaydapl\openpay\lib\Openpay\Co
     {
       // Algo ;
       try {
-        \openpaydapl\openpay\lib\Openpay\Validation\Validation::_validatePrice($this->PurchasePrice);
+        \openpay\openpaylaravel\lib\Openpay\Validation\Validation::_validatePrice($this->PurchasePrice);
         if($this->ReducePriceBy)
         {
-          \openpaydapl\openpay\lib\Openpay\Validation\Validation::_validatePrice($this->ReducePriceBy);
+          \openpay\openpaylaravel\lib\Openpay\Validation\Validation::_validatePrice($this->ReducePriceBy);
         }
         //If the exception is thrown, this text will not be shown
         $this->_updateUrl();

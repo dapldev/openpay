@@ -1,5 +1,5 @@
 <?php
-namespace openpaydapl\openpay\lib\Openpay\Exception;
+namespace openpay\openpaylaravel\lib\Openpay\Exception;
 
 /**
  * Class ErrorHandler
