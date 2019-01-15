@@ -17,13 +17,13 @@ Laravel Framework:
 ------------------------------------------
 
 1. To install Openpay composer package run the below command
-  composer require openpaydapl/openpay dev-master
+  composer require openpay/openpaylaravel dev-master
 
    *After Installation give write permission to the log folder in the path "/vendor/openpaydapl/ 
     openpay/lib/Openpay/log".
 
 2. Include the Openpay.php in the any controller page
-   require(app_path('/../vendor/openpaydapl/openpay/lib/Openpay/Common/Openpay.php'));
+   require(app_path('/../vendor/openpay/openpaylaravel/lib/Openpay/Common/Openpay.php'));
    
    In the file the basic urls are define like this and use those constant.
 
@@ -67,11 +67,11 @@ $JamDeliveryDate = '01 Jan 2019';//dd mmm yyyy
 4. now you have to call the Call-1 NEW ONLINE ORDER API menthods like this :
 
 					$Method = "NewOnlineOrder";
-						$obj = new \openpaydapl\openpay\lib\Openpay\Api\NewOnlineOrder(URL,$Method,$PurchasePrice,JAMTOKEN, AUTHTOKEN,'','','','','');
+						$obj = new \openpay\openpaylaravel\lib\Openpay\Api\NewOnlineOrder(URL,$Method,$PurchasePrice,JAMTOKEN, AUTHTOKEN,'','','','','');
 						
 						$responsecall1 = $obj->_checkorder();
 						$output = json_decode($responsecall1,true);
-						$openErrorStatus = new \openpaydapl\openpay\lib\OpenPay\Exception\ErrorHandler();
+						$openErrorStatus = new \openpay\openpaylaravel\lib\OpenPay\Exception\ErrorHandler();
 						if($openErrorStatus !=''){
 							$openErrorStatus->_checkstatus($output['status']);	
 						} 
@@ -82,7 +82,7 @@ $JamDeliveryDate = '01 Jan 2019';//dd mmm yyyy
 								 "Log: ".$responsecall1.PHP_EOL.
 								"-------------------------".PHP_EOL;
 						//Save string to log, use FILE_APPEND to append.
-						file_put_contents(app_path('/../vendor/openpaydapl/openpay/lib/Openpay').'/Log/log'.date("j.n.Y").'.log', $log, FILE_APPEND);
+						file_put_contents(app_path('/../vendor/openpay/openpaylaravel/lib/Openpay').'/Log/log'.date("j.n.Y").'.log', $log, FILE_APPEND);
 
 6. now we got plan id and ready for payment so here it is by Call-2 API
 
@@ -92,14 +92,14 @@ $JamDeliveryDate = '01 Jan 2019';//dd mmm yyyy
 						$pagegurl = $form_url.'?JamCallbackURL='.$JamCallbackURL.'&JamCancelURL='.$JamCancelURL.'&JamFailURL='.$JamFailURL.'&JamAuthToken='.urlencode(JAMTOKEN).'&JamPlanID='.urlencode( (string) $JamPlanID).'&JamRetailerOrderNo='.urlencode( $JamRetailerOrderNo ).'&JamPrice='.urlencode($PurchasePrice).'&JamEmail='.urlencode($JamEmail).'&JamFirstName='.urlencode($JamFirstName).'&JamOtherNames='.urlencode($JamOtherNames).'&JamFamilyName='.urlencode($JamFamilyName).'&JamDateOfBirth='.urlencode($JamDateOfBirth).'&JamAddress1='.urlencode($JamAddress1).'&JamAddress2='.urlencode($JamAddress2).'&JamSubrub='.urlencode($JamSubrub).'&JamState='.urlencode($JamState).'&JamPostCode='.urlencode($JamPostCode).'&JamDeliveryDate='.urlencode($JamDeliveryDate);
 									try {
 										if($JamDateOfBirth)
-											\openpaydapl\openpay\lib\OpenPay\Validation\Validation::_validateDate($JamDateOfBirth);	 
+											\openpay\openpaylaravel\lib\OpenPay\Validation\Validation::_validateDate($JamDateOfBirth);	 
 										if($JamDateOfBirth)
-											\openpaydapl\openpay\lib\OpenPay\Validation\Validation::_validateDate($JamDeliveryDate);
+											\openpay\openpaylaravel\lib\OpenPay\Validation\Validation::_validateDate($JamDeliveryDate);
 										if($JamState)
-											\openpaydapl\openpay\lib\OpenPay\Validation\Validation::_validateState($JamState);
+											\openpay\openpaylaravel\lib\OpenPay\Validation\Validation::_validateState($JamState);
 										if($JamPostCode)
-											\openpaydapl\openpay\lib\OpenPay\Validation\Validation::_validatePostcode($JamPostCode);	  	
-										$charge = \openpaydapl\openpay\lib\OpenPay\Api\OpenpayCharge::_charge($pagegurl);
+											\openpay\openpaylaravel\lib\OpenPay\Validation\Validation::_validatePostcode($JamPostCode);	  	
+										$charge = \openpay\openpaylaravel\lib\OpenPay\Api\OpenpayCharge::_charge($pagegurl);
 									}
 									catch(Exception $e) {
 										echo 'Message: ' .$e->getMessage();
@@ -134,10 +134,10 @@ Failure Result :
  
 		$PlanID = '3000000019868';
 		$Method = "OnlineOrderCapturePayment";
-		$obj = new \openpaydapl\openpay\lib\OpenPay\Api\OnlineOrderCapturePayment(URL,$Method,'',JAMTOKEN,AUTHTOKEN,$PlanID);
+		$obj = new \openpay\openpaylaravel\lib\OpenPay\Api\OnlineOrderCapturePayment(URL,$Method,'',JAMTOKEN,AUTHTOKEN,$PlanID);
 		$response = $obj->_checkorder(); 
 		$output = json_decode($response,true); 
-		$openErrorStatus = new \openpaydapl\openpay\lib\OpenPay\Exception\ErrorHandler();
+		$openErrorStatus = new \openpay\openpaylaravel\lib\OpenPay\Exception\ErrorHandler();
 		if($openErrorStatus !=''){
 			$openErrorStatus->_checkstatus($output['status']);	
 		}
@@ -146,7 +146,7 @@ Failure Result :
 				 "Log: ".$response.PHP_EOL.
 				"-------------------------".PHP_EOL;
 		//Save string to log, use FILE_APPEND to append.
-		file_put_contents(app_path('/../vendor/openpaydapl/openpay/lib/Openpay').'/Log/log'.date("j.n.Y").'.log', $log, FILE_APPEND);
+		file_put_contents(app_path('/../vendor/openpay/openpaylaravel/lib/Openpay').'/Log/log'.date("j.n.Y").'.log', $log, FILE_APPEND);
 
 9.Check your order status
 		
@@ -172,18 +172,18 @@ Failure Result :
 		$type = False;// make True if want to refund full Plan price
 		//echo $ReducePriceBy.'=='.$type;die;
 		//True if want to refund full Plan price
-		$obj = new \openpaydapl\openpay\lib\Openpay\Api\PlanPurchasePriceReductionCall(URL, $Method, '', JAMTOKEN, AUTHTOKEN, $PlanID, '', $ReducePriceBy, $type);
+		$obj = new \openpay\openpaylaravel\lib\Openpay\Api\PlanPurchasePriceReductionCall(URL, $Method, '', JAMTOKEN, AUTHTOKEN, $PlanID, '', $ReducePriceBy, $type);
 
 		$response = $obj->_checkorder(); 
 		$output = json_decode($response,true); 
 		//dd($output);
-		$openErrorStatus = new \openpaydapl\openpay\lib\Openpay\Exception\ErrorHandler();
+		$openErrorStatus = new \openpay\openpaylaravel\lib\Openpay\Exception\ErrorHandler();
 		//Something to write to txt log
 		$log  = "Order refund log time: ".$_SERVER['REMOTE_ADDR'].' - '.date("F j, Y, g:i a").PHP_EOL.
 		         "Log: ".$response.PHP_EOL.
 		        "-------------------------".PHP_EOL;
 		//Save string to log, use FILE_APPEND to append.
-		file_put_contents(app_path('/../vendor/openpaydapl/openpay/lib/Openpay').'/Log/log'.date("j.n.Y").'.log', $log, FILE_APPEND);
+		file_put_contents(app_path('/../vendor/openpay/openpaylaravel/lib/Openpay').'/Log/log'.date("j.n.Y").'.log', $log, FILE_APPEND);
 
 		Refund process will be excute as per the following steps.
 
@@ -201,14 +201,14 @@ This call supports Retailers that are set up to not receive any payment for thei
 
 		$PlanID = '3000000020110';//Plan ID retrieved from Web Call 1 API
 		$Method = "OnlineOrderDispatchPlan";
-		$obj = new \openpaydapl\openpay\lib\Openpay\Api\OnlineOrderDispatchPlan(URL,$Method,'',JAMTOKEN,AUTHTOKEN,$PlanID);
+		$obj = new \openpay\openpaylaravel\lib\Openpay\Api\OnlineOrderDispatchPlan(URL,$Method,'',JAMTOKEN,AUTHTOKEN,$PlanID);
 		$response = $obj->_checkOrderDispatchPlan(); 
 		$output = json_decode($response,true); 
-		$openErrorStatus = new \openpaydapl\openpay\lib\Openpay\Exception\ErrorHandler();
+		$openErrorStatus = new \openpay\openpaylaravel\lib\Openpay\Exception\ErrorHandler();
 		//Something to write to txt log
 		$log  = "Order dispatch log time: ".$_SERVER['REMOTE_ADDR'].' - '.date("F j, Y, g:i a").PHP_EOL.
 				 "Log: ".$response.PHP_EOL.
 				"-------------------------".PHP_EOL;
 		//Save string to log, use FILE_APPEND to append.
-		file_put_contents(app_path('/../vendor/openpaydapl/openpay/lib/Openpay').'/Log/log'.date("j.n.Y").'.log', $log, FILE_APPEND);		
+		file_put_contents(app_path('/../vendor/openpay/openpaylaravel/lib/Openpay').'/Log/log'.date("j.n.Y").'.log', $log, FILE_APPEND);		
 
