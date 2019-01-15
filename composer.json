@@ -1,5 +1,5 @@
 {
-    "name": "openpay/openpaylaravel",
+    "name": "openpay-sdk/openpaylaravel",
 	"description": "This is a client implementing the payment services for Openpay",
     "type": "library",
 	"version": "1.0.0",
